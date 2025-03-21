@@ -110,7 +110,7 @@ header nav ul li a:hover {
   width: 100%;
   background-color: #B3C0F9;
   /* Blue background */
-  color: #1B3A8C;
+  color: #fff;
   padding: 10px 0;
   overflow: hidden;
   position: relative;
@@ -129,20 +129,20 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+/* Make the text repeat to fill the container */
+.banner-text:after {
+  content: attr(data-repeat);
+  /* This will create repeating content from the span */
+}
+
 @keyframes moveText {
   0% {
     transform: translateX(0);
-    /* Start from the left */
-  }
-
-  50% {
-    transform: translateX(-50%);
-    /* Make it halfway through */
   }
 
   100% {
     transform: translateX(-100%);
-    /* Move completely off-screen */
+    /* Move the entire content off-screen */
   }
 }
 /* Service Info Section */
