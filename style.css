@@ -713,6 +713,7 @@ footer{
 
   .hero{
     padding: 30px 33px;
+    background-attachment: initial;
   }
 
   .banner-text span{
